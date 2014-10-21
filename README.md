@@ -13,3 +13,20 @@ Let's install this as a git submodule.
 - In `lib/sass/vendor/_index.sass`, add
 
     @import switch/switch
+
+- In the very bottom of your theme file, instantiate the `switch()` mixin
+
+    =switch($color: $primary-color)
+      +switch-default($color)
+
+- To add a switch, use the following markup 
+
+      <p>
+        <div class="switch">
+          <input id="switch-2" type="checkbox" />
+          <label for="switch-2"></label>
+        </div>
+        <span>Let me know about future updates!</span>
+      </p>
+
+  - Note, the `switch-2` id is optional. Use whatever id you like.
