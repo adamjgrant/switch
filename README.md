@@ -37,3 +37,7 @@ To add a switch, use the following markup
       </p>
 
 Note, the `switch-1` id is optional. Use whatever id you like.
+
+At any time, you can update all the submodules in your project from your project root by running
+
+    git submodule update
