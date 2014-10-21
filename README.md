@@ -28,15 +28,17 @@ Now that you have the mixin available, you just need to assign it to some class
 
 To add a switch, use the following markup 
 
-      <p>
+      <div>
         <div class="switch">
           <input id="switch-1" type="checkbox" />
           <label for="switch-1"></label>
         </div>
         <span>Let me know about future updates!</span>
-      </p>
+      </div>
 
 Note, the `switch-1` id is optional. Use whatever id you like.
+The first `div` is just to contain anything. When stacking switches, you'll want
+to make this div 'display: block' or use `form_group()`
 
 At any time, you can update all the submodules in your project from your project root by running
 
