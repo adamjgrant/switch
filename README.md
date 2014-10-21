@@ -21,14 +21,19 @@ In the very bottom of your theme file, instantiate the `switch()` mixin
     =switch($color: $primary-color)
       +switch-default($color)
 
+Now that you have the mixin available, you just need to assign it to some class
+
+    .switch
+      +switch
+
 To add a switch, use the following markup 
 
       <p>
         <div class="switch">
-          <input id="switch-2" type="checkbox" />
-          <label for="switch-2"></label>
+          <input id="switch-1" type="checkbox" />
+          <label for="switch-1"></label>
         </div>
         <span>Let me know about future updates!</span>
       </p>
 
-Note, the `switch-2` id is optional. Use whatever id you like.
+Note, the `switch-1` id is optional. Use whatever id you like.
