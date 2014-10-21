@@ -1,4 +1,7 @@
 =switch-default($color: $primary-color)
+  display: inline-block
+  vertical-align: middle
+
   input[type="checkbox"]
     position: absolute
     margin-left: -9999px
@@ -9,3 +12,42 @@
       position: relative
       cursor: pointer
       user-select: none
+      padding: 2px
+      width: 40px
+      height: 20px
+      background: map-get($white, darker)
+      border-radius: 60px
+      transition: background 0.4s
+
+      &:before, &:after
+        display: block
+        position: absolute
+        content: " "
+
+      &:before
+        top: 2px
+        left: 2px
+        bottom: 2px
+        right: 2px
+        background-color: white
+        border-radius: 60px
+        transition: background 0.4s
+
+      &:after
+        top: 4px
+        left: 4px
+        bottom: 4px
+        width: 12px
+        background-color: map-get($white, darker)
+        border-radius: 52px
+        transition: margin 0.4s, background 0.4s
+
+    &:checked + label
+      background-color: map-get($colors, green)
+
+      &:after
+        margin-left: 20px
+        background-color: map-get($colors, green)
+
+
+

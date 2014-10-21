@@ -1,1 +1,14 @@
 @import switch
+
+// These variables will be available inside of Kickstart, 
+// but putting them here so the example works without it.
+
+$primary-color: blue
+$colors: (green: #8ce196)
+$white: (darker: #DDD)
+
+=switch
+  +switch-default
+
+.switch
+  +switch
