@@ -16,7 +16,7 @@ In `lib/sass/vendor/_index.sass`, add
 
     @import switch/switch
 
-In the very bottom of your theme file, instantiate the `switch()` mixin
+In one of your project's sass files (after your theme has been imported), instantiate the `switch()` mixin
 
     =switch($color: $primary-color)
       +switch-default($color)
